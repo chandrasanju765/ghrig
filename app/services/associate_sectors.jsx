@@ -8,22 +8,24 @@ const AssociatedSectors = () => {
   return (
     <section className="max-w-7xl mx-auto py-12 sm:py-20 px-4 sm:px-6">
       {/* Header Row */}
-      <div className="flex justify-between items-end mb-12">
+      <div className="flex flex-col sm:flex-row justify-between items-center sm:items-end text-center sm:text-left gap-6 sm:gap-0 mb-12">
         <h2 className="text-3xl sm:text-5xl font-bold text-gray-900 leading-tight">
-          Our Associated <br />  Sectors
+          Our Associated <br className="hidden sm:block" /> Sectors
         </h2>
-        <p className="text-gray-400 text-lg sm:text-2xl font-medium text-right max-w-xs">
-          Sectors we are <br /> associated with currently
+
+        <p className="text-gray-400 text-base sm:text-2xl font-medium max-w-xs">
+          Sectors we are <br className="hidden sm:block" /> associated with
+          currently
         </p>
       </div>
 
       {/* Sector Buttons */}
-      <div className="flex flex-wrap justify-between sm:justify-start gap-4 sm:gap-8">
+      <div className="flex flex-wrap justify-center sm:justify-between gap-4 sm:gap-8">
         {sectors.map((sector) => (
           <button
             key={sector}
             onClick={() => setActiveSector(sector)}
-            className={`w-[200px] sm:w-[280px] h-[80px] sm:h-[100px] rounded-xl font-medium text-base sm:text-lg transition-all duration-300 
+            className={`w-[45%] sm:w-[250px] md:w-[280px] h-[80px] sm:h-[100px] rounded-xl font-medium text-base sm:text-lg transition-all duration-300 
               ${
                 activeSector === sector
                   ? "text-white shadow-md scale-[1.02] bg-gradient-to-r from-[#141E2B] via-[#6C5DD3] to-[#B8A8FF]"

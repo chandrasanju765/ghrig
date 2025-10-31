@@ -67,13 +67,14 @@ export default function Header() {
               <Link href="/" onClick={() => setOpen(false)}>Home</Link>
             </li>
             <li className="hover:text-purple-400 cursor-pointer py-2">
-              <Link href="/jobs" onClick={() => setOpen(false)}>Jobs</Link>
-            </li>
-            <li className="hover:text-purple-400 cursor-pointer py-2">
               <Link href="/about_us" onClick={() => setOpen(false)}>About Us</Link>
+
             </li>
             <li className="hover:text-purple-400 cursor-pointer py-2">
-              <Link href="/blog" onClick={() => setOpen(false)}>Blog</Link>
+              <Link href="/services" onClick={() => setOpen(false)}>Services</Link>
+            </li>
+            <li className="hover:text-purple-400 cursor-pointer py-2">
+              <Link href="/contact_us" onClick={() => setOpen(false)}>Contact Us</Link>
             </li>
           </ul>
 
